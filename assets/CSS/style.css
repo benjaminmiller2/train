@@ -1,0 +1,92 @@
+
+body{
+    background-color: whitesmoke;
+  }
+  .title-frame{
+      display: flex;
+      justify-content: flex-start;
+      width: 960px;
+      margin: auto;
+      margin-top: 20px;
+  }
+  .frame{
+    border: 1px solid indigo;
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .title{
+    font-size: 36px;
+    color: indigo;
+  }
+  .heading{
+      font-size: 24px;
+  }
+  .text-box{
+    
+    padding: 20px;
+    color: indigo
+
+  }
+  .game-box{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .counter-box{
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: whitesmoke;
+    
+  }
+  .crystal-box{
+    
+    display: flex;
+    justify-content: center;
+
+  }
+  .crystal-holder{
+    
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+  .img{
+    height: 100%;
+    width: 100%;
+    align-content: center
+  }
+  .button-box{
+
+  }
+  .button{
+    border: 1px solid indigo;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+;
+  }
+  .counter-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+  }
+  .black{
+    background-color: black;
+  }
+  .darkorange{
+    background-color: darkorange;
+  }
+  .yellow{
+      background-color: yellow;
+  }
+  .maroon{
+      background-color: maroon;
+  }
