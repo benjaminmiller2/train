@@ -7,10 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/reset.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="assets/javascript/logic.js"></script>
 </head>
 <body>
-    
+
+        <div class='display'>
+
+                <div class='title'>
+                <h2>Current Train Schedule</h2>
+                </div>
+                   <br><br>                 
+                 <table class='t-table'>
+                 <tr>
+                    <th class='t-heading'>Train Name</th>
+                    <th class='t-heading'>Destination</th> 
+                    <th class='t-heading'>Frequency (min)</th>
+                    <th class='t-heading'>Next Arrival</th>
+                    <th class='t-heading'>Minutes Away</th>
+                  </tr>
+                  
+                  <tr class="newTrains">
+                    <td class='t-data'>Sample</td>
+                    <td class='t-data'>Sample</td>
+                    <td class='t-data'>Sample</td>
+                    <td class='t-data'>Sample</td>
+                    <td class='t-data'>Sample</td>
+                  </tr>
+                
+                </table>
+                
+                </div>
+<br><br>
+<div>  
+<div><p>Train Name</p><input class="js-tName"></div>
+<div><p>Destination</p><input class="js-tDestination"></div>
+<div><p>Frequency</p><input class="js-tFrequency"></div>
+<div><p>Minutes Away</p><input class="js-tMinutesAway"></div>
+<div><p>Next Train</p><input class="js-tNextTrain"></div>
+<div><button class="js-submit">Submit</button></div>
+</div> 
 </body>
 </html>
