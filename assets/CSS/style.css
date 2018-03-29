@@ -1,0 +1,63 @@
+
+.banner{
+  height: 175px;
+  width: 100%;
+  background-image: url(../images/train.jpg);
+  background-size: 100% 175px;
+  position: relative;
+}
+.title{
+  color: white;
+  position: absolute;
+  left: 2em;
+  top: 1em;
+  font-size: 36px;
+}
+.t-table{
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 80%;
+}
+
+.t-heading{
+  color: white;
+  background-color: forestgreen;
+  height: 50px;
+  width: 200px;
+  vertical-align: middle;
+  border-radius: 50px;
+}
+.t-data{
+text-align: center;
+vertical-align: middle;
+background-color: red;
+color: white;
+border-radius: 50px;
+height: 25px;
+width: 175px;
+}
+.container{
+  background-color: orangered;
+  border-radius: 50px;
+}
+.inputo{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 600px;
+  background-color: grey;
+  border-radius: 50px;
+}
+.field{
+  width: 500px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.js-submit{
+  border: 1px solid black;
+  width: 75px;
+  height: 25px;
+}

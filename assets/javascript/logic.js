@@ -19,6 +19,7 @@ let minutes = 0;
 let next = "";
 
 $(".js-submit").on("click", function(){
+    event.preventDefault();
 
 name = $(".js-tName").val().trim();
 destination = $(".js-tDestination").val().trim();
@@ -53,6 +54,7 @@ $(".t-table").append(newTrain);
 newTrain.append(newName).append(newDestination).append(newFrequency).append(newMinutes).append(newNext);
 
 console.log(snapshot.val().name);
-})
+
+});
 
 })

@@ -12,15 +12,12 @@
     <script src="assets/javascript/logic.js"></script>
 </head>
 <body>
-
+<div class="banner"><p class="title">Current Train Schedule</p></div>
         <div class='display'>
 
-                <div class='title'>
-                <h2>Current Train Schedule</h2>
-                </div>
                    <br><br>                 
                  <table class='t-table'>
-                 <tr>
+                 <tr class="t-row">
                     <th class='t-heading'>Train Name</th>
                     <th class='t-heading'>Destination</th> 
                     <th class='t-heading'>Frequency (min)</th>
@@ -28,7 +25,7 @@
                     <th class='t-heading'>Minutes Away</th>
                   </tr>
                   
-                  <tr class="newTrains">
+                  <tr class="t-row">
                     <td class='t-data'>Sample</td>
                     <td class='t-data'>Sample</td>
                     <td class='t-data'>Sample</td>
@@ -40,13 +37,13 @@
                 
                 </div>
 <br><br>
-<div>  
-<div><p>Train Name</p><input class="js-tName"></div>
-<div><p>Destination</p><input class="js-tDestination"></div>
-<div><p>Frequency</p><input class="js-tFrequency"></div>
-<div><p>Minutes Away</p><input class="js-tMinutesAway"></div>
-<div><p>Next Train</p><input class="js-tNextTrain"></div>
-<div><button class="js-submit">Submit</button></div>
-</div> 
+ <div class="container">
+<div class="inputo"><p>Train Name</p><input class="js-tName field"></div>
+<div class="inputo"><p>Destination</p><input class="js-tDestination field"></div>
+<div class="inputo"><p>Frequency</p><input class="js-tFrequency field"></div>
+<div class="inputo"><p>Minutes Away</p><input class="js-tMinutesAway field"></div>
+<div class="inputo"><p>Next Train</p><input class="js-tNextTrain field"></div>
+<div class="inputo"><button class="js-submit">Submit</button></div>
+</div>
 </body>
 </html>
