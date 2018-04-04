@@ -14,30 +14,50 @@ let database = firebase.database();
 
 let name = "";
 let destination = "";
-let frequency = 0;
-let minutes = 0;
-let next = "";
+let firstTrain = "";
+let frequency = "";
+
+
+let backDate = "";
+let currentTime = "";
+let diffTime = "";
+let remaining = "";
+let minutesAway = "";
+let nextTrain = "";
+let nextTrainFormatted = "";
+
+
 
 $(".js-submit").on("click", function(){
     event.preventDefault();
 
 name = $(".js-tName").val().trim();
 destination = $(".js-tDestination").val().trim();
+firstTrain = $(".js-tFirst").val().trim();
 frequency = $(".js-tFrequency").val().trim();
-minutes = $(".js-tMinutesAway").val().trim();
-next = $(".js-tNextTrain").val().trim();
-
+backDate = moment(firstTrain, "hh:mm").subtract(1, "months");
+currentTime = moment();
+diffTime = moment().diff(moment(backDate), "minutes");
+remaining = diffTime % frequency;
+minutesAway = frequency - remaining;
+nextTrain = moment().add(minutesAway, "minutes");
+nextTrainFormatted = moment(nextTrain).format("hh:mm");
 
 
 database.ref().push({
 name: name,
 destination: destination,
 frequency: frequency,
-minutes: minutes,
-next: next,
+firstTrain: firstTrain,
+minutesAway: minutesAway,
+nextTrainFormatted: nextTrainFormatted,
 dateAdded: firebase.database.ServerValue.TIMESTAMP
 });
 
+name = $(".js-tName").val("");
+destination = $(".js-tDestination").val("");
+firstTrain = $(".js-tFirst").val("");
+frequency = $(".js-tFrequency").val("");
 
 });
 
@@ -47,11 +67,12 @@ let newTrain = $("<tr>");
 let newName = $("<td class='t-data'>" + snapshot.val().name + "</td>");
 let newDestination = $("<td class='t-data'>" + snapshot.val().destination + "</td>");
 let newFrequency = $("<td class='t-data'>" + snapshot.val().frequency + "</td>");
-let newMinutes = $("<td class='t-data'>" + snapshot.val().minutes + "</td>");
-let newNext = $("<td class='t-data'>" + snapshot.val().next + "</td>");
+let newNextTrain = $("<td class='t-data'>" + snapshot.val().nextTrainFormatted + "</td>");
+let newMinutesAway = $("<td class='t-data'>" + snapshot.val().minutesAway + "</td>");
+
 
 $(".t-table").append(newTrain);
-newTrain.append(newName).append(newDestination).append(newFrequency).append(newMinutes).append(newNext);
+newTrain.append(newName).append(newDestination).append(newFrequency).append(newNextTrain).append(newMinutesAway);
 
 console.log(snapshot.val().name);
 

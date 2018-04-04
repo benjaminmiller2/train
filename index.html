@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/reset.css" />
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
     <script src="assets/javascript/logic.js"></script>
 </head>
 <body>
@@ -32,9 +33,9 @@
  <div class="container">
 <div class="inputo"><p>Train Name</p><input class="js-tName field"></div>
 <div class="inputo"><p>Destination</p><input class="js-tDestination field"></div>
-<div class="inputo"><p>Frequency</p><input class="js-tFrequency field"></div>
-<div class="inputo"><p>Minutes Away</p><input class="js-tMinutesAway field"></div>
-<div class="inputo"><p>Next Train</p><input class="js-tNextTrain field"></div>
+<div class="inputo"><p>First Train Time (HH:mm - military time)</p><input class="js-tFirst field"></div>
+<div class="inputo"><p>Frequency (mins)</p><input class="js-tFrequency field"></div>
+
 <div class="inputo"><button class="js-submit">Submit</button></div>
 </div>
 </body>

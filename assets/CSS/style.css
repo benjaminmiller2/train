@@ -20,6 +20,7 @@ body{
   margin-right: auto;
   margin-left: auto;
   width: 80%;
+  
 }
 
 .t-heading{
@@ -29,6 +30,7 @@ body{
   width: 200px;
   vertical-align: middle;
   border-radius: 15px;
+
 }
 .t-data{
 text-align: center;
@@ -38,6 +40,7 @@ color: white;
 border-radius: 10px;
 height: 25px;
 width: 175px;
+
 }
 .container{
 width: 100%;
